@@ -75,8 +75,6 @@ def get_preference_order(country):
 
 def get_optimal_resource(input_text):
     all_units, hours = parse_input(input_text)
-    print(all_units, hours)
-
     output_list = []
     for country, cost_map in cost_country_map.items():
         machines = list()
@@ -102,4 +100,5 @@ def get_optimal_resource(input_text):
         })
     return {"Output": output_list}
 
-print (get_optimal_resource("1100 units for 12 Hours"))
+
+print(get_optimal_resource("Capacity of 1150 units for 1 Hour"))
